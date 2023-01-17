@@ -262,16 +262,16 @@ body {
   width: 100%;
 }
 
-.omnifood:hover {
+.omnifood {
   background-color: #eb984e;
 }
 
-.natours:hover {
+.natours {
   background-color: #1de259;
 }
 
-.natourss {
-  background-color: #00fff8;
+.forkify {
+  background-color: #e9a680;
 }
 
 /*******************************/
