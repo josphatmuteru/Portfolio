@@ -107,13 +107,36 @@ body {
 /*******************************/
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #0054ff;
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
+  margin-top: 0;
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  top: 0;
+  right: 0;
+  background-color: #0054ff;
+  z-index: 998;
+}
+
+.test {
+  background-color: #111;
+}
+
+/* .sticky .section-hero {
+  display: none;
+  margin-top: 4.8rem;
+} */
 
 .logo {
   width: 16rem;
@@ -152,16 +175,17 @@ body {
 .section-hero {
   background-color: #0054ff;
   /* background-image: linear-gradient(to bottom, #0054ff, #a8b8d5); */
-  padding: 9.6rem;
+  padding: 9.6rem 9.6rem 12.8rem 9.6rem;
 }
 
 .hero-img {
-  height: 36rem;
-  width: 36rem;
+  max-width: 36rem;
+  max-height: 36rem;
   /* background-color: #f5f5f5; */
 }
 
 .hero {
+  max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -172,14 +196,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(3.75deg);
+  /* transform: rotate(3.75deg); */
 }
 
 .photo {
-  height: 100%;
+  width: 90%;
+  /* height: 100%; */
 }
 .hero-text {
-  width: 70%;
+  /* width: 70%; */
+  margin-top: 4.8rem;
   align-self: center;
   color: #f1f1f1;
 }
@@ -247,9 +273,22 @@ body {
 
 .work-link:link,
 .work-link:visited {
-  text-decoration: underline;
+  display: inline-block;
+  text-decoration: none;
+  width: fit-content;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
   font-size: 1.8rem;
-  color: #eb984e;
+  font-weight: 400;
+  color: #222;
+  transition: all 0.3s;
+}
+
+.work-link:hover,
+.work-link:active {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  color: #888;
 }
 
 .project-img {

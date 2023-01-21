@@ -1,0 +1,62 @@
+/*******************************/
+/* BELOW 1300PX (SMALLER DESKTOPS*/
+/*******************************/
+
+@media (max-width: 84em) {
+  .work-type {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .work-description {
+    font-size: 1.6rem;
+    margin-bottom: 6.4rem;
+    line-height: 1.6;
+  }
+
+  .work-link:link,
+  .work-link:visited {
+    font-size: 1.6rem;
+  }
+}
+
+/*******************************/
+/* BELOW 1200PX (LANDSCAPE TABLETS)*/
+/*******************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*******************************/
+/* BELOW 1024PX (LANDSCAPE TABLETS)*/
+/*******************************/
+
+@media (max-width: 65em) {
+  .work-type {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .work-description {
+    font-size: 1.4rem;
+    margin-bottom: 4.8rem;
+    line-height: 1.6;
+  }
+
+  .work-link:link,
+  .work-link:visited {
+    font-size: 1.4rem;
+  }
+}
+
+/*
+
+-Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 /
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 /
+*/
