@@ -66,6 +66,7 @@ body {
   font-weight: 400;
   color: #444;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .container {
@@ -87,7 +88,7 @@ body {
   font-size: 2.4rem;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
 }
 .subheading {
   display: block;
@@ -243,8 +244,9 @@ body {
 }
 
 .project-2 {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1fr;
   padding-left: 0;
+  /* gap: 0; */
 }
 
 .project-text-2 {
@@ -257,6 +259,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.work-title {
+  margin-bottom: 4.8rem;
 }
 .work-type {
   display: block;
@@ -297,6 +303,7 @@ body {
   padding: 4.8rem;
   transition: all 0.5s;
 }
+
 .work-img {
   width: 100%;
 }
