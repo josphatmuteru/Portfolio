@@ -108,7 +108,7 @@ body {
 /*******************************/
 
 .header {
-  /* position: relative; */
+  position: fixed;
   display: flex;
   justify-content: space-between;
   background-color: #0054ff;
@@ -116,9 +116,18 @@ body {
   height: 9.6rem;
   padding: 0 4.8rem;
   margin-top: 0;
+  z-index: 998;
+  width: 100%;
+  top: 0;
+  transition: top 0.5s;
+}
+.header.scroll {
+  top: -9.6rem;
+
+  /* top: 9.6rem; */
 }
 
-.sticky {
+/* .sticky {
   position: fixed;
   width: 100%;
   height: 8rem;
@@ -128,7 +137,8 @@ body {
   right: 0;
   background-color: #0054ff;
   z-index: 998;
-}
+  display: none;
+} */
 
 .test {
   background-color: #111;
@@ -195,7 +205,7 @@ body {
 .section-hero {
   background-color: #0054ff;
   /* background-image: linear-gradient(to bottom, #0054ff, #a8b8d5); */
-  padding: 9.6rem 9.6rem 12.8rem 9.6rem;
+  padding: 19.2rem 9.6rem 12.8rem 9.6rem;
 }
 
 .hero-img {
@@ -262,6 +272,9 @@ body {
   /* transition: all 1s; */
 }
 
+.projects .project:last-child {
+  margin-bottom: 3.2rem;
+}
 .project-2 {
   grid-template-columns: 1.8fr 1fr;
   padding-left: 0;
