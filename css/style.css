@@ -58,6 +58,7 @@ Default: 9px
 
 html {
   font-size: 62.5%;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -163,6 +164,22 @@ body {
   gap: 4.8rem;
 }
 
+/* .nav-list a:link,
+.nav-list a:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #f1f1f1;
+
+  transition: all 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  color: #111;
+} */
+
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
@@ -176,6 +193,10 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
+  color: #111;
+}
+
+.main-nav-link.active {
   color: #111;
 }
 
@@ -245,7 +266,8 @@ body {
 }
 
 .hello {
-  font-family: serif;
+  /* font-family: serif; */
+  font-family: "Rubik", sans-serif;
   font-size: 9.6rem;
   margin-bottom: 3.2rem;
 }
@@ -295,18 +317,23 @@ body {
 
 .work-title {
   margin-bottom: 4.8rem;
+  color: #333;
+  text-transform: capitalize;
 }
 .work-type {
   display: block;
-  font-size: 2.4rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 200;
   margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  color: #777;
 }
 
 .work-description {
   font-size: 1.8rem;
   margin-bottom: 6.4rem;
   line-height: 1.6;
+  color: #444;
 }
 
 .work-link:link,
@@ -369,7 +396,7 @@ body {
   line-height: 1.6;
 }
 
-.about-me span {
+.bold {
   display: block;
   font-weight: 600;
   margin-bottom: 1.2rem;
