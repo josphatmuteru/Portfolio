@@ -84,3 +84,27 @@ workEl.addEventListener("mouseover", function (e) {
 mobileNavBtn.addEventListener("click", function () {
   mobileHeaderEl.classList.toggle("mobile");
 });
+
+const projectEls = document.querySelectorAll(".project");
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+window.addEventListener("scroll", (e) => {
+  e.preventDefault();
+  projectEls.forEach((projectEl) => {
+    if (isElementInViewport(projectEl)) {
+      const id = projectEl.getAttribute("id");
+      const imgEl = projectEl.querySelector(".project-img");
+      imgEl.classList.add(id);
+    }
+  });
+});
