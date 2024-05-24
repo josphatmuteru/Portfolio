@@ -127,7 +127,9 @@ body {
 
   /* top: 9.6rem; */
 }
-
+.hidden {
+  display: none !important;
+}
 /* .sticky {
   position: fixed;
   width: 100%;
@@ -377,6 +379,15 @@ body {
 
 .forkify {
   background-color: #e9a680;
+}
+.make-me-study {
+  background-color: #00b0f0;
+}
+.make-me-study-landing-page {
+  background-color: #4472c4;
+}
+.the-wild-oasis {
+  background-color: #a5a1e1;
 }
 
 /*******************************/
